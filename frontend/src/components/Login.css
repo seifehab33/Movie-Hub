@@ -1,0 +1,94 @@
+:root {
+  --main-font: "Dosis", sans-serif;
+  --dark-bg: #0a2647;
+  --light-bg: #1b2430;
+  --main-color: #e94560;
+  --font-color: #fff;
+  --transition: 0.7s all ease;
+  --border: 2px solid rgb(51, 51, 51);
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */ /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.containerr {
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 15px;
+}
+.containerr > img {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+.inputs > input {
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  font-family: var(--main-font);
+  border-radius: 7px;
+  font-size: 14px;
+}
+.inputs > input:focus {
+  background-color: var(--main-color);
+  transition: 0.7s all;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login > button {
+  background-color: var(--main-color);
+  color: var(--font-color);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.login > button:hover {
+  transition: var(--transition);
+  background-color: #e945606e;
+}
+.login > a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.login > a:hover {
+  transition: var(--transition);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+}

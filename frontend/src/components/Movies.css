@@ -1,0 +1,12 @@
+  .movies-s {
+    padding-top: 200px;
+  }
+  .Movies {
+    background-color: var(--light-bg);
+  }
+  .Movies span {
+    width: 2rem;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+  }

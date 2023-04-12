@@ -1,0 +1,69 @@
+.about {
+  background-color: white;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+}
+.about > p:first-child {
+  font-size: 15px;
+  color: rgba(128, 128, 128, 0.7);
+}
+.about .boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .about .boxes {
+    display: block;
+  }
+  .about .boxes .boxg {
+    margin-top: 10px;
+  }
+}
+.boxg {
+  background: none;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+}
+.boxg {
+  color: black;
+}
+.boxg:hover {
+  color: white;
+}
+.boxg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  border-radius: 8px;
+}
+.box::before {
+  transform: scaleY(0) !important;
+}
+.box:hover::before {
+  transform: scaleY(1) !important;
+}
+.box > h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.box > p {
+  font-size: 14px;
+}

@@ -1,0 +1,39 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-to-top button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: scrollButtonUp 0.5s ease-in-out infinite;
+}
+@keyframes scrollButtonUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.scroll-to-top button:hover {
+  background-color: white;
+  color: var(--main-color);
+}

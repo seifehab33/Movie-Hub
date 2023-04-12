@@ -1,0 +1,100 @@
+.POSTS-BOX {
+  display: flex;
+  min-height: 100vh;
+}
+.POSTS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  min-height: 100vh;
+  margin-top: 200px;
+}
+.POSTS > .box-pos {
+  margin-top: 10px;
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+}
+.box-pos {
+  border-radius: 15px;
+}
+.B-comment {
+  display: flex;
+  justify-content: space-between;
+}
+.B-comment > button {
+  color: white;
+  padding: 3px;
+  margin: 0 !important;
+  letter-spacing: 1px;
+  border: 1px solid var(--light-bg);
+  border-radius: 2px;
+  transition: all 0.7s;
+}
+.B-comment > button:hover {
+  background-color: white;
+  color: var(--light-bg);
+  transition: 0.7s all;
+  border: 1px solid var(--light-bg);
+}
+.B-comment > input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  transition: 0.7s all;
+}
+.B-comment > input:focus {
+  border: 1px solid gray;
+  transition: 0.7s all;
+}
+/* input[type="file"] {
+  display: none;
+} */
+.com {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px;
+  gap: 6px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-right: auto !important;
+}
+.box-pos {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: nowrap;
+  width: 100% !important;
+}
+.Comment-box {
+  background-color: gray;
+}
+.gray-background {
+  background-color: #ccc; /* change color code to desired shade of gray */
+}
+
+.white-background {
+  background-color: #fff; /* change color code to desired shade of white */
+}
+@media (max-width: 768px) {
+  .box-pos {
+    width: 400px !important;
+  }
+  .box-pos h2 {
+    font-size: 16px !important;
+    font-weight: 700;
+  }
+}
+.delete-buttom {
+  display: flex;
+  background-color: red;
+  color: white;
+  margin-left: auto;
+  border: none;
+}

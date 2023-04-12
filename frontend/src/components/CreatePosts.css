@@ -1,0 +1,27 @@
+.createpost {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.createpost > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+.createpost > .Form > .input > input,
+textarea {
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+.createpost > .Form > button {
+  padding: 10px;
+  color: white;
+}

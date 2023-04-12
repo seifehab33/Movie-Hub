@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: var(--main-font);
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */ /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.532);
+  z-index: -1;
+  opacity: 0.8;
+}
